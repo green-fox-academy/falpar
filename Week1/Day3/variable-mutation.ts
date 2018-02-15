@@ -75,12 +75,6 @@ let k: string = 'Apple';
 // fill the k variable with its content 4 times
 
 
-
-
-
-
-
-
 for(let i: number = 0; i < 2; i++) {
      k += k;
 
