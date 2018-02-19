@@ -16,10 +16,9 @@ for( let i: number = 1; i <= lineCount; i++ ){
     for(let j = 1; j <= i; j++){
         star += "*";
         for(let k: number = 1; k <= i; k++) {
-            console.log(star);
             star += "*";
     }
     }
     
-    
+    console.log(star);
 }
