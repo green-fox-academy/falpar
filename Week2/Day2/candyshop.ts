@@ -21,24 +21,3 @@ function sweets(param: string[]){
     return param;
 }
 console.log(sweets(shopItems));
-// function sweets(arr: any[]){
-//     arr.map(function(value, index){
-//         if(typeof arr[index] === 'number'){
-//             arr[index] = 'Croissant';
-//             return arr;
-//         }else if(typeof arr[index] === 'boolean'){
-//             arr[index] = 'Ice cream';
-//             return arr; 
-//         }
-//         return arr;
-//     });
-//     return arr;
-// }
-
-
-
-
-
-
-
-
