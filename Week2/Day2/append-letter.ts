@@ -12,12 +12,3 @@ function appendA(allat: string[]) {
 }
 
 console.log(appendA(far));
-//The output should be: 'kutya', 'macska', 'kacsa', 'róka', 'halacska'
-//export = appendA;
-
-// function appendA(allat: string[]) {
-//     allat = allat.map(x => x + 'a');
-//     return allat;
-// }
-
-// console.log(appendA(far));
