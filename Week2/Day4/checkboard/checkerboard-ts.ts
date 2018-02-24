@@ -15,8 +15,10 @@ for(let x: number = 0; x < 9; x++){
         }else{
             ctx.fillStyle = 'white';
             ctx.fillRect(64*x, 64*y, 64, 64);
-    }
-    }
-}
+            }
+        }
+    }   
 }
 draw();
+
+
