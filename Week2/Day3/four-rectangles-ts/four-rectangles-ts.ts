@@ -13,7 +13,7 @@ function fourRect(a, b, c, d) {
     ctx.fillStyle ='#'+(Math.random()*0xFFFFFF<<0).toString(16)
     ctx.fillRect(a, b, c, d);
 }
-    let a: number = 10;
+    let a: number = 20;
     let b: number = 10;
     let c: number = 50;
     let d: number = 50;

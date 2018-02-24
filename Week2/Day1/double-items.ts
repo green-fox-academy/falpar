@@ -8,6 +8,6 @@ let names = ['Gin', 'Whiskey', 'Wine', 'Beer'];
 
 let namesDouble = names.map(function(x){
     return x+=x;
-})
+});
 
 console.log(namesDouble);

@@ -15,7 +15,7 @@ function line(x, y) {
 }
 
 
-let a: number = 100;
+let a: number = 20;
 let b: number = 200;
 
 for(let i = 0; i < 3; i++) {

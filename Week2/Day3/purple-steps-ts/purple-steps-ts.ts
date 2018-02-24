@@ -14,7 +14,6 @@ function purpleSteps(x: number, y:number, ){
 }
 let a: number = 0;
 let b: number = 0;
-let 
 
 for(let i = 0; i < 19; i++){
     a += 15;
