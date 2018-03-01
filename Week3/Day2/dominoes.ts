@@ -16,18 +16,28 @@ function initializeDominoes(): Domino[] {
     dominoes.push(new Domino(7, 1));
     return dominoes;
 }
-
 function print(dominoes: Domino[]) {
     dominoes.forEach(function (value) {
         console.log(value);
     });
 }
-
 let dominoes = initializeDominoes();
+let box = [];
+box.push(dominoes[0]);
+// 
+
+for(let j = 0; j < dominoes.length; j++){
+    for(let i = 0; i < dominoes.length; i++) {
+        if(box[j].values[1] === dominoes[i].values[0]) {
+         box.push(dominoes[i]);
+        }
+
+    }
+ }
 /** You have the list of Dominoes */
 /** Order them into one snake where the adjacent dominoes have the same numbers on their adjacent sides */
 /** eg: [2, 4], [4, 3], [3, 5] ... */
 
 
 
-print(dominoes);
+console.log(box);
