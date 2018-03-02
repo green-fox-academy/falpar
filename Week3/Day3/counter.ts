@@ -3,14 +3,14 @@
 
 //Write a recursive function that takes one parameter: n and counts down from n
 
-function doRecursion(par1:number) {
-   let number: number = 1;
+function doRecursion(number:number) {
    
-    if(par1 <= number){
+    console.log(number);
+    if(number <= 1){
         return number;
     }else{ 
-        return number * doRecursion(number - 1);
-        }
+        return number - doRecursion(number - 1);
+    }
 }
 
-console.log(doRecursion(10));
+doRecursion(10);
