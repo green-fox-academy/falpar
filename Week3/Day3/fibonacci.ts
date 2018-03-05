@@ -11,6 +11,11 @@ function fibonacci(n: number){
     let a: number  = 0;
     let b: number = 1;
     let sum: number;
+    if(n < 1) {
+        return 1
+    }else{
+        sum = a + b;
+    }
 
 
 }
