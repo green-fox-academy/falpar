@@ -57,10 +57,10 @@ class Mentor extends Person {
 class Sponsor extends Person {
     skippedDays: number;
     company: string;
-    hiredStudents: number;
+    hiredStudents: number = 0;
     hire(){
-        this.hiredStudents++;
-        return this.hiredStudents;
+        
+        return this.hiredStudents++;
     }
     introduce(){
         console.log(`Hi, I\'m ' ${this.name} a ${this.age} year old ${this.gender} who represents ${this.company} and hired ${this.hiredStudents} so far.`);
@@ -80,19 +80,24 @@ class Sponsor extends Person {
 
 class Cohort {
     name: string;
-    students:string [] = [];
-    mentors: string [] = [];
+    students: Student [] = [];
+    mentors: Mentor []=[] ;
+    constructor(name){
+        this.name = name;
+    }
 
-    addStudents(Student){
+    addStudent(Student){
         this.students.push(Student);
     }
+
     addMentor(Mentor){
         this.mentors.push(Mentor);
     }
     info(){
-        console.log
+        
+        console.log(`The ${this.name} cohort has ${this.students.length} and ${this.mentors.length} mentors`)
     }
-
+   
 }
 
 
@@ -126,3 +131,10 @@ for (let i = 0; i < 6; i++) {
     person.introduce();
     person.getGoal();
   }
+
+  let awesome = new Cohort('AWESOME');
+awesome.addStudent(student);
+awesome.addStudent(john);
+awesome.addMentor(mentor);
+awesome.addMentor(gandhi);
+awesome.info();
