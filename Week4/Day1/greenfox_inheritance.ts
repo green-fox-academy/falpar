@@ -78,7 +78,22 @@ class Sponsor extends Person {
 }
 
 
+class Cohort {
+    name: string;
+    students:string [] = [];
+    mentors: string [] = [];
 
+    addStudents(Student){
+        this.students.push(Student);
+    }
+    addMentor(Mentor){
+        this.mentors.push(Mentor);
+    }
+    info(){
+        console.log
+    }
+
+}
 
 
 let people = [];
