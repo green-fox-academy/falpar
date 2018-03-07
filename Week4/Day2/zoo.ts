@@ -1,6 +1,6 @@
 'use strict'
 
-
+import {Flyable} from './flyable'
 abstract class Animal{
     name: string;
     age: number;
@@ -36,9 +36,18 @@ class Mammal extends Animal{
 
     }
 }
-class Bird extends Animal{
+export class Bird extends Animal implements Flyable{
     breed(){
-        return 'laying eggs';
+        return 'Laying eggs';
+    }
+    land(){
+        return 'I can land on water.';
+    }
+    fly(){
+        return 'I can fly with my wings.';
+    }
+    takeOff(){
+        return 'I can take off verticaly.';
     }
 }
 
