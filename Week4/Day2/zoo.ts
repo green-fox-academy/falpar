@@ -15,9 +15,7 @@ abstract class Animal{
     getName(){
         return this.name;
     }
-    breed(){
-
-    }
+    abstract breed();
     breathe(){
 
     }

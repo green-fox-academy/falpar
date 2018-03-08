@@ -12,11 +12,7 @@ abstract class Vehicle {
     wheels: number;
     speed: string;
 
-    constructor(doors: string, wheels: number, speed: string){
-        this.doors = doors;
-        this.wheels = wheels;
-        this.speed = speed;
-    }
+    
 }
 
 class Helicopter extends Vehicle implements Flyable{
@@ -28,6 +24,12 @@ class Helicopter extends Vehicle implements Flyable{
     }
     takeOff(){
         return 'I can take off verticaly.';
+    }
+    constructor(doors: string, wheels: number, speed: string){
+        super()
+        this.doors = doors;
+        this.wheels = wheels;
+        this.speed = speed;
     }
 }
 
