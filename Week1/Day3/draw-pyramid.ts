@@ -17,7 +17,7 @@ let space: string = " ";
 for(let i: number = 1; i <= lineCount; i++ ){
     let pyramid = '';
 
-    for(let j:number = (lineCount-1); j >= 1; j--){
+    for(let j:number = (lineCount-1); j >= i; j--){
         pyramid += space;
     }
     for(let k: number = 1; k <= ((i*2)-1); k++) {

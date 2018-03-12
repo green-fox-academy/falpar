@@ -14,4 +14,4 @@ function power(x:number, j: number){
 
 }
 
-console.log(power(10, 2));
+console.log(power(5, 3));
