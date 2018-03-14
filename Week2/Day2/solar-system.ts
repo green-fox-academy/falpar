@@ -10,7 +10,7 @@
 let planetList: string[] = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Uranus', 'Neptune'];
 let planetX: string = 'Saturn';
 
-function putSaturn(x){
+function putSaturn(x: string): string[] {
     let total  = planetList.concat(x);
     return total;
 }

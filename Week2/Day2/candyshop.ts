@@ -8,7 +8,8 @@ let shopItems: any[] = ['Cupcake', 2, 'Brownie', false];
 // Create a function called sweets() which takes the list as a parameter.
 // Expected output: "Cupcake", "Croissant", "Brownie", "Ice cream"
 
-function sweets(param: string[]){
+function sweets(param: string[]):string []{
+
     param.forEach(function(item, index){
         if (typeof param[index] === 'number') {
             param[index] = "Croissant";
@@ -21,3 +22,5 @@ function sweets(param: string[]){
     return param;
 }
 console.log(sweets(shopItems));
+
+

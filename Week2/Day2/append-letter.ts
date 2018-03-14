@@ -3,12 +3,12 @@
 // The parameter should be a list.
 let far: string[] = ['kuty', 'macsk', 'kacs', 'rók', 'halacsk'];
 
-function appendA(allat: string[]) {
-    let a:number = allat.length;
-    for(let i = 0; i < a; i++) {
+function appendA(allat: string[]): string[] {
+    //let a: number = allat.length;
+    for(let i = 0; i < allat.length; i++) {
         allat[i]+= 'a';
     }
-     return allat;
+    return allat;
 }
 
 console.log(appendA(far));
