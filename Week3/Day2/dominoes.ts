@@ -24,7 +24,6 @@ function print(dominoes: Domino[]) {
 let dominoes = initializeDominoes();
 let box = [];
 box.push(dominoes[0]);
-// 
 
 for(let j = 0; j < dominoes.length; j++){
     for(let i = 0; i < dominoes.length; i++) {

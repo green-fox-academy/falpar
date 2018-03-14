@@ -45,23 +45,16 @@ class Farm {
             this.animals.push(new Animal());
             this.slots--;
         }
-
     }
-    
-
     slaughter(){
 // megkeresem a legkevesbe eheset
 // kiveszem a t0mbbol splice
 // novelem a szabad helyek szamat
-         for(let i:number = 0; i <= this.animals.length; i++){
+         for(let i: number = 0; i <= this.animals.length; i++){
             this.animals.splice(1);
              this.slots++;
-         }
-        
-           
-    } 
-    
-    
+         }    
+    }   
 }
 let newFarm = new Farm();
 console.log(newFarm);
