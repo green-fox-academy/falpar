@@ -8,13 +8,13 @@ let reversed: string = '.eslaf eb t\'ndluow ecnetnes siht ,dehctiws erew eslaf d
 
 
 function reverse(str) {
-    let newString: string = "";
-
-    for(let i: number = str.length -1  ; i > 0; i--) {
+     let newString: string = "";
+    
+    for(let i: number = str.length -1  ; i >= 0; i--) {
         newString += str[i];
     }
     return newString;
 }
 
-let item = reverse(reversed);
-console.log(item);
+
+console.log(reverse(reversed));

@@ -4,7 +4,7 @@
 // if it contains return "Hoorray" otherwise return "Noooooo"
 const numbers: number[] = [1, 2, 3, 7 , 4, 5, 6, 8];
 
-function containsSeven(x: number[]) {
+function containsSeven(x: number[]): string {
     let bool: boolean = false;
 
     for(let i = 0; i < x.length; i++ ) {

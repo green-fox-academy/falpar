@@ -6,7 +6,7 @@ let girls: string[] = ['Eve', 'Ashley', 'Bözsi', 'Kat', 'Jane'];
 let boys: string[] = ['Joe', 'Fred', 'Béla', 'Todd', 'Neef', 'Jeff'];
 
 
-function makingMatches(x: string[], y: string[]) {
+function makingMatches(x: string[], y: string[]): string [] {
     let mix: string[] = [];
     for(let i= 0; i < x.length; i++) {
         mix = mix.concat(x[i], y[i]);
